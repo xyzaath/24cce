@@ -1,3 +1,5 @@
+![image](IMG-20240925-WA0030.jpg)
+
 # {Project Name} - BUILDATHON
 Tell us about your project here
 
