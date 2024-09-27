@@ -1,0 +1,34 @@
+.titlehead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 50px;
+    background: rgba(0, 197, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.titlehead img{
+    height: 80%;
+    width: 80%;
+    position: relative;
+}
+
+.titlehead p{
+    font: 500;
+    text-align: center;
+}
+
+@media(max-width:1020px){
+    .titlehead{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+}
