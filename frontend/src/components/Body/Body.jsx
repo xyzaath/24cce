@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import { assets } from '../../assets/assets'
 import './Body.css'
+import { useNavigate } from 'react-router-dom'
 
 const Body = () => {
     const [Category, setCategory] = useState('Pharmacy')
+    const navigate = useNavigate()
     return (
         <>
             <h4 className='mt-5'>Use Our Facitlity TO The Fullest</h4>
@@ -21,9 +23,9 @@ const Body = () => {
                             <div className="card" >
                                 <img src={assets.pharmacyLogo} className="card-img-top" alt="..." />
                                 <div className="card-body d-flex flex-column">
-                                    <h5 className="card-title">Login Your Pharmacy</h5>
-                                    <p className="card-text">Access your account to manage prescriptions, view patient information, and stay updated on inventory. Join us in providing exceptional care and service to our community!</p>
-                                    <a href="#" class="btn btn-primary mt-auto">Login here</a>
+                                    <h5 className="card-title">Add Medicine</h5>
+                                    <p className="card-text">Easily manage your inventory by selecting a product and entering the new quantity. This feature helps you keep track of stock levels and ensures you always have the right products on hand.</p>
+                                    <a onClick={()=>{navigate('/pharmalogin')}} class="btn btn-primary mt-auto">Add here</a>
                                 </div>
                             </div>
                             <div className="card" >
@@ -43,7 +45,7 @@ const Body = () => {
                                 <div className="card-body d-flex flex-column">
                                     <h5 className="card-title">Find Your Medicine</h5>
                                     <p className="card-text">Search for the medications you need with ease. Enter the name or category, and discover available options at your local pharmacies. Your health is just a click away!</p>
-                                    <a href="#" class="btn btn-primary mt-auto">Find your Need</a>
+                                    <a onClick={()=>{navigate('/medicine')}} class="btn btn-primary mt-auto">Find your Need</a>
                                 </div>
                             </div>
                             <div className="card" >
