@@ -10,8 +10,8 @@ const PlaceOrder = () => {
       <div className="place-order-left">
         <p className="title">Delivery Information</p>
         <div className="multi-fields">
-          <input required name='lastName'  type="text" placeholder='Last name' />
           <input required name='firstName'   type="text" placeholder='First name' />
+          <input required name='lastName'  type="text" placeholder='Last name' />
         </div>
         <input required name='street'  type="text" placeholder='Street' />
         <input required name='email' type="email" placeholder='Email address' />
@@ -32,7 +32,7 @@ const PlaceOrder = () => {
             <div>
               <div className="cart-total-details">
                 <p>Subtotal</p>
-                <p>${getTotalAmount()}</p>
+                <p>Rs{getTotalAmount()}</p>
               </div>
               <hr />
               <div className="cart-total-details">
