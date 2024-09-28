@@ -16,8 +16,8 @@
     border: none;
     padding: 30px;
     border-radius: 50px;
-    background: rgba(0, 197, 255, 0.25);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    background: rgba(0, 0, 0, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(69, 69, 69, 0.37);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border-radius: 10px;
@@ -26,7 +26,7 @@
 
 .body-container button:hover {
     background: rgba(242, 75, 114, 0.25);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border-radius: 10px;
@@ -53,7 +53,7 @@
     align-items: center;
     height: 600px;
     width: 500px;
-    background: rgba(0, 197, 255, 0.25);
+    background: #cbcbcbfe;
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
@@ -67,7 +67,7 @@
 
 .card a{
     width: 100%;
-    background-color: crimson;
+    background-color: #04b100;
 }
 
 .toggleContainer {
@@ -77,7 +77,7 @@
    width: fit-content;
    border: 3px solid #343434;
    border-radius: 20px;
-   background: rgba(0, 197, 255, 0.25);
+   background: #134815fe;
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);

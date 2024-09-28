@@ -1,12 +1,14 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 
 import './Navbar.css'
 import { useNavigate } from 'react-router-dom'
 import { assets } from '../../assets/assets'
+import { storeContext } from '../../Context/StoreContext'
 
 const Navbar = () => {
     const [Menu,setMenu] = useState('home')
     const navigate = useNavigate()
+    const {} = useContext(storeContext)
     return (
        <div className="navbar">
         <div className="title">
@@ -14,11 +16,18 @@ const Navbar = () => {
         </div>
         <div className="menu">
             <a onClick={()=>{setMenu('home'),navigate('/')}} className={Menu=='home' ? 'active' : '' }>Home</a>
+            <a onClick={()=>{setMenu('findmedicine'),navigate('/medicine')}} className={Menu=='findmedicine' ? 'active' : '' }>Find Medicine</a>
             <a onClick={()=>{setMenu('pharmacy'),navigate('/pharmalogin')}} className={Menu=='pharmacy' ? 'active' : ''} >Add Medicine</a>
             <a href='#contact' onClick={()=>{setMenu('contact')}} className={Menu=='contact' ? 'active' : ''} >Contact</a>
-        </div>
-        <div className="login">
-            <button>Buy now</button>
+            </div>
+            <div className="login">
+                {
+                    
+                }
+                <svg onClick={()=>{navigate("/cart")}} xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" className="bi bi-bag me-5 text-white" viewBox="0 0 16 16">
+                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
+                </svg>
+            <button onClick={()=>{navigate('/order')}}>Proceed to Checkout</button>
         </div>
        </div>
     )

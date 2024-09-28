@@ -5,8 +5,8 @@ import { assets } from '../../assets/assets'
 const PharmaLogin = () => {
     return (
         <div className='Pharma mt-5'>
-            <h1 className='text-center'>Add Medicin</h1>
-            <form className='form-container'>
+            <h1 className='text-center text-white'>Add Medicine</h1>
+            <form className='form-container text-white p-5'>
                 <div class="mb-3">
                     <label htmlFor="image">
                         <img src={assets.imgLogo} alt="" />

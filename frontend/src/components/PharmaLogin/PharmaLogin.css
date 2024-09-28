@@ -1,8 +1,8 @@
 .form-container {
     display: flex;
     flex-direction: column;
-    background: rgba(54, 182, 220, 0.3);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    background: rgba(54, 220, 129, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 135, 55, 0.37);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     border-radius: 10px;
@@ -11,8 +11,8 @@
 
 
 .form-container button{
-    background-color: crimson;
-    background: rgba(220, 54, 101, 0.3);
+    background-color: rgb(20, 220, 217);
+    background: rgba(54, 217, 220, 0.3);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
